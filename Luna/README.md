@@ -1,5 +1,3 @@
-Aquí tienes el contenido en formato **Markdown** listo para copiar y pegar en tu archivo `README.md`:
-
 ```markdown
 # SALOS: Seismic Analysis for Lunar Data
 
