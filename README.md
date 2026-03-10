@@ -1,38 +1,43 @@
-# SALOS: Seismic Data Analysis System
+# SISMONET: Capturing the Seismic Heartbeat of the Cosmos - SALOS Algorith Suazabots
+**NASA Space Apps Challenge 2024** **Team:** Suazabots  
+**Challenge:** Seismic Detection Across the Solar System
 
-Sistema de análisis y detección de eventos sísmicos diseñado para el procesamiento de señales en entornos de exploración espacial (Marte y la Luna). El software permite la identificación de terremotos mediante el análisis de umbrales de amplitud y la generación de representaciones gráficas automáticas.
+## Project Summary
+Planetary seismology faces significant challenges due to the difficulty of transmitting high-resolution data to Earth. **SISMONET** addresses this by implementing the **SALOS** algorithm, a refined STA/LTA (Short-Term Average / Long-Term Average) approach designed to distinguish between seismic signals and background noise with high precision.
 
-## Descripción Técnica
-El sistema procesa datos en formatos MiniSEED y CSV utilizando librerías científicas de Python para extraer segmentos significativos de actividad sísmica.
+Our solution optimizes data selection, ensuring that only scientifically relevant information is prioritized for transmission, thereby increasing reliability and energy efficiency for planetary landers.
 
-### Dependencias
-* Python 3.x
-* ObsPy
-* NumPy
-* Pandas
-* Matplotlib
+## The SALOS Algorithm
+The core of this project is the **SALOS** algorithm. It analyzes wave amplitude over consecutive periods to identify the onset of seismic events in data from the **Apollo** (Moon) and **InSight** (Mars) missions.
 
-## Estructura del Proyecto
+### Key Features:
+* **Multi-Range Detection:** Categorizes data based on amplitude thresholds:
+    * **Green:** High-amplitude data.
+    * **Orange:** Intermediate-range data.
+* **Density Analysis:** Identifies the onset of earthquakes by detecting the accumulation of intermediate and high-amplitude signals.
+* **Dynamic Adaptability:** Unlike static triggers, SALOS allows for threshold adjustments based on the specific seismic environment (Mars vs. Moon).
 
-### 1. Script de Detección (Carpeta MARS)
-Especializado en la identificación del inicio de eventos sísmicos.
-* **Entradas:** Archivos MiniSEED y CSV con datos de amplitud.
-* **Funcionalidad:** Identificación de picos mediante umbrales configurables (niveles amarillo y verde).
-* **Salida:** Gráficos de la señal con áreas de detección resaltadas y marca de agua.
+## Performance and Results
+Based on rigorous testing against NASA’s baseline algorithms:
+* **Effectiveness:** **98.2%** (compared to the 92% baseline).
+* **Accuracy:** Successfully identified the earthquake onset in **169 out of 172 plots**.
+* **Optimization:** The 3 remaining plots were addressed through dynamic threshold adjustments, demonstrating the program's flexibility.
 
-### 2. Análisis de Segmentos (Carpeta MOON)
-Optimizado para el análisis de continuidad en señales sísmicas lunares.
-* **Entradas:** Archivos MiniSEED y CSV.
-* **Funcionalidad:** Identificación de segmentos continuos que representan la duración total de un evento.
-* **Salida:** Visualización de bloques de datos que superan los umbrales específicos del entorno.
+## Repository Structure
+* **/MARS**: Implementation for Mars InSight Lander data.
+* **/MOON**: Implementation for Apollo Passive Seismic Experiment data.
+* **Scripts:** Python-based tools using ObsPy, NumPy, Pandas, and Matplotlib.
 
-## Instrucciones de Uso
+## Resources & Documentation
+* **Demo Video:** [Watch on YouTube](https://www.youtube.com/watch?v=tNKmN-PjJuM)
+* **Project Workspace:** [Google Drive Folder](https://drive.google.com/drive/folders/1JmIQ3F8qx46kxHheEy7D3yvwjakRjIHL?usp=sharing)
+* **Official Profile:** [NASA Space Apps Project Page](https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/suazabots1/?tab=project)
 
-1. **Configuración:** Definir las rutas de los directorios de datos dentro de los scripts principales.
-2. **Ejecución:**
-   * Para análisis en Marte: Ejecutar el script dentro de la carpeta `/MARS`.
-   * Para análisis en la Luna: Ejecutar el script dentro de la carpeta `/MOON`.
-3. **Resultados:** Las visualizaciones generadas se almacenarán en el directorio de salida configurado para su revisión.
+## References
+* NASA Space Apps 2024 Seismic Detection Data Packet.
+* Apollo Passive Seismic Experiment Data Description.
+* Mars InSight Seismic Data Information Sheet.
+* *Bulletin of the Seismological Society of America (BSSA)*: STA/LTA parameter setting research.
 
-## Conclusión
-SALOS proporciona una metodología estandarizada para la investigación sismológica fuera de la Tierra, facilitando el estudio de datos provenientes de misiones de exploración espacial.
+---
+*Developed by Team Suazabots for the 2024 NASA Space Apps Challenge.*
