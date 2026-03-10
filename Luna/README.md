@@ -1,4 +1,4 @@
-```markdown
+
 # SALOS: Seismic Analysis for Lunar Data
 
 ## Overview
@@ -54,3 +54,4 @@ output_folder = r"D:\your folder for results"
 The earthquake region is shaded in purple.
 
 ---
+
