@@ -26,22 +26,23 @@ The analysis focuses on distinguishing between noise and significant seismic act
 
 To install the required libraries, run the following command:
 
+```bash
+pip install numpy obspy pandas matplotlib
 
-Bash
-    pip install numpy obspy pandas matplotlib
-
+```
 
 ## Usage
 
 1. Modify the paths for the input and output folders in the code:
+```python
+input_folder = r"D:\your folder to analyze"
+output_folder = r"D:\your folder for results"
 
-   
-   input_folder = r"D:\your folder to analyze"
-   output_folder = r"D:\your folder for results"
+```
 
 
-3. Place your MiniSEED and corresponding CSV files in the specified input folder.
-4. Run the script to analyze the seismic data and generate plots.
+2. Place your MiniSEED and corresponding CSV files in the specified input folder.
+3. Run the script to analyze the seismic data and generate plots.
 
 ## Output
 
@@ -51,14 +52,14 @@ The script generates plots for each MiniSEED file, highlighting the detected ear
 
 After running the script, you will find output images similar to the following:
 
-- example_plot.jpeg
+* example_plot.jpeg
 
 Each plot includes:
 
-- The seismic signal.
-- Lines indicating points above predefined amplitude thresholds.
-- Highlighted segments representing detected earthquakes.
-- A watermark with the team name 'SUAZABOTS'.
+* The seismic signal.
+* Lines indicating points above predefined amplitude thresholds.
+* Highlighted segments representing detected earthquakes.
+* A watermark with the team name 'SUAZABOTS'.
 
 ## Acknowledgments
 
