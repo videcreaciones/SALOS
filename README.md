@@ -1,4 +1,4 @@
-# SISMONET: Capturing the Seismic Heartbeat of the Cosmos - SALOS Algorith Suazabots
+# SISMONET: Capturing the Seismic Heartbeat of the Cosmos - SALOS Algorithm Suazabots
 **NASA Space Apps Challenge 2024** **Team:** Suazabots  
 **Challenge:** Seismic Detection Across the Solar System
 
