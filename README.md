@@ -39,5 +39,12 @@ Based on rigorous testing against NASA’s baseline algorithms:
 * Mars InSight Seismic Data Information Sheet.
 * *Bulletin of the Seismological Society of America (BSSA)*: STA/LTA parameter setting research.
 
+## Team Members
+* Wilmer Andres Silva Suarez
+* Salomón Jarro Cerón
+* María Angélica Sandoval
+* Oscar Roberto Fonseca Barrera
+* Samuel Nicolás Rodríguez López
+
 ---
 *Developed by Team Suazabots for the 2024 NASA Space Apps Challenge.*
