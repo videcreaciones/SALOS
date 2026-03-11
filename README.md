@@ -1,3 +1,5 @@
+![SISMONET Banner](https://raw.githubusercontent.com/videcreaciones/SALOS_Algorithm-SpaceAppsChallenge-Nasa2024/main/SALOS.jpg)
+
 # SISMONET: Capturing the Seismic Heartbeat of the Cosmos - SALOS Algorithm Suazabots
 
 **NASA Space Apps Challenge 2024** | **Team:** Suazabots  
